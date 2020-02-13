@@ -40,5 +40,6 @@ table, th, td {
 }
 
 .graysquare{
-    background-color: lightgray;
+    background-color: lightsteelblue;
+    border-color: black;
 }
