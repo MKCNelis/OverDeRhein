@@ -23,7 +23,7 @@ background-color: #0e7a0d;
 .container{
     width:         70%;
     margin-left:   15% ;
-     background-color:red;
+     
 }
 .innerContainer{
     width: 100%;
@@ -39,4 +39,8 @@ background-color: #0e7a0d;
     padding-top: 1%;
     padding-left: 3%;
     background-color:green; 
-}
+} 
+
+.invisablecell{        
+    border-color: #00000000;
+    height: 25px;}
