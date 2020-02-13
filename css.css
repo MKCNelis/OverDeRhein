@@ -15,8 +15,30 @@ table, th, td {
     margin-right: auto;
 }
 
+.tablebluebackground{
+    background-color:lightsteelblue ;
+}
+
 .tablewhitebackground{
     background-color: white;
 }
 
+.tablegraybackground{
+    background-color: lightgray;
+}
 
+.tableholder{
+    background-color: lightgray;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.invisablecell{         /*voorcellen in de tabel die alleen de tekstmogenlaten zien en niet de cel*/
+    border-color: #00000000;
+    height: 25px;
+
+}
+
+.graysquare{
+    background-color: lightgray;
+}
