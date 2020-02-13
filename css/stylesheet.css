@@ -1,15 +1,32 @@
-.table, th ,td{
+.table, th {
     border: 1px solid black;
     background-color: rgb(145, 139, 139);
+    max-width: 90%;
 }
-
+th{
+    background-color: gray;
+}
+td{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    max-width: 90%;
+}
+.red{
+ background-color: #e4000f;
+}
+.green{
+background-color: #0e7a0d;
+}
+.whiteBack{
+    background-color: white;
+}
 .container{
     width:         70%;
     margin-left:   15% ;
      background-color:red;
 }
 .innerContainer{
-    width: 90%;
+    width: 100%;
     margin-left: 5%;
     margin-top: -1%;
     padding-top: 1%;
