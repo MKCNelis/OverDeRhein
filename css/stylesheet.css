@@ -1,0 +1,25 @@
+.table, th ,td{
+    border: 1px solid black;
+    background-color: rgb(145, 139, 139);
+}
+
+.container{
+    width:         70%;
+    margin-left:   15% ;
+     background-color:red;
+}
+.innerContainer{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: -1%;
+    padding-top: 1%;
+    padding-left: 3%;
+    background-color:azure;
+}
+.blockContainer{
+    width: 84%;
+    margin-left: 8%;
+    padding-top: 1%;
+    padding-left: 3%;
+    background-color:green; 
+}
