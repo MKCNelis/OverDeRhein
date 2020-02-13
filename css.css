@@ -1,0 +1,22 @@
+body{
+    background-color: whitesmoke;
+    color: rgb(20, 20, 20)26, 26);
+    justify-content: center;
+    margin-left: 15%;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+.tablecontainer{
+    margin-left: 60%;
+    margin-right: auto;
+}
+
+.tablewhitebackground{
+    background-color: white;
+}
+
+
