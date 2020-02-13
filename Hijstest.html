@@ -7,7 +7,7 @@ document function:	systeenm voor hijstesten
 date last change:	12-02-2019
 -->
 <html>
-    <head> <!---->
+    <head> <!--styling-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -15,29 +15,35 @@ date last change:	12-02-2019
 
         <link rel='stylesheet' Type='text/css' href="CSS\stylesheet.css">
     </head>
-        <body>
+        <body class='hijstest'><!--bodyclass for styling-->
             <div class='blockContainer'>
                 <button>bestand</button>
                 <button>info</button>
             </div>
             <br><br>
              <div class='container'>
-                <div class='innerContainer'>
-                    <h4>Tabel Hijskraangegevens(2100)</h4>
-                    
+                <div class='innerContainer'><!--begin innercontainer-->
+                    <h4>Tabel Hijskraangegevens(2100)</h4><!--tilete fot page-->
+                    <table>
+                        <td class="invisablecell" colspan="17" align="right">
                     <form>
-                        <h6>opdrachtnummer</h6><input type="number"  placeholder="opdrachtnummer"> <br>
+                        <h6>opdrachtnummer</h6><input type="number"  placeholder="opdrachtnummer"> <br><!--ordernummer-->
                     </form>
+                        </td>
+                        <tr>
+                    <td class="invisablecell" colspan="17" align="left"><!--text With formula-->
                     <p>Bepaal(bereken of lesst af uit de tabel) de toelaatbare hijslast bij gemeten vlucht.<br>
                          vereken vervolgens de afwijken met de volgende Formule<br>
                         (proeflast-toelaatberehuislast)<br>
                         _______________________________<br>
                     afwijking= toelatbare hijslast *100%
                         </p>
+                    </td>
+                </tr>
                     <br>
-            <table >
+            <!--Begin table wil load info from A Datafile if it works-->
                 <tr><th >hijstesten</th><th colspan="3">opgesteld op</th><th colspan="4">Gieklengte</th><th colspan="3">Giekhoek</th><th colspan="4">Zwenkelhoek</th><th colspan="2">beproeving</th><th colspan="2">akoord</th></tr>
-                <tr><th></th><th>banden</th><th>Stempels</th><th>Rupsen</th><th>hoofd-<br>giek</th><th>mecha-<br>nische<br>sectie</th><th>hulp-<br>giek</th><th>Totale<br>giek<br>lengte</th><th>hoofd<br>giek</th><th>hulp-<br>giek</th><th>aantal<br>parten<br>hijskabel</th><th>R=360<br>A=achter<br>Z=zij<br>sV=Voorsector</th><th>Eingen<br>Massa<br>ballast <br>LMB code</th><th>Toelaatbere<br>bedrijfslast<br>bij inwerking</th><th>LMB<br>treedt in<br>bij werking bij</th><th>proeflast</th><th>Afwijking in %</th><th class='green'>ja</th><th class='red'>Nee</th></tr>
+                <tr><th></th><th>banden</th><th>Stempels</th><th>Rupsen</th><th>hoofd-<br>giek</th><th>mecha-<br>nische<br>sectie</th><th>hulp-<br>giek</th><th>Totale<br>giek<br>lengte</th><th>hoofd<br>giek</th><th>hulp-<br>giek</th><th>aantal<br>parten<br>hijskabel</th><th>R=360<br>A=achter<br>Z=zij<br>sV=Voorsector</th><th>Eingen<br>Massa<br>ballast <br>LMB code</th><th>Toelaatbere<br>bedrijfslast<br>bij inwerking</th><th>LMB<br>treedt in<br>bij werking bij</th><th>proeflast</th><th>Afwijking in %</th><th class='green'>ja  </th><th class='red'>Nee</th></tr>
                 <tr><th></th><th></th><th></th><th></th><th>m</th><th>m</th><th>m</th><th>m</th><th>gr</th><th>gr</th><th></th><th></th><th>t</th><th></th><th></th><th>m</th><th>t</th><th class="green"></th><th class="red"></th></tr>
                
                 <tr><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='green'></td><td class='red'></td></tr>
@@ -45,7 +51,7 @@ date last change:	12-02-2019
                 <tr><td>3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='green'></td><td class='red'></td></tr>
                 <tr><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='green'></td><td class='red'></td></tr>
                 <tr>
-                    <td class="invisablecell" colspan="8" align="right">
+                    <td class="invisablecell" colspan="17" align="right">
                         <button>Exit</button>
                     </td>
                 </tr>
