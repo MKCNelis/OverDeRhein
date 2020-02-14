@@ -15,7 +15,7 @@ date last change:	12-02-2019
 
         <link rel='stylesheet' Type='text/css' href="CSS\stylesheet.css">
     </head>
-        <body class='hijstest'><!--bodyclass for styling-->
+        <body><!--bodyclass for styling-->
             <div class='blockContainer'>
                 <button>bestand</button>
                 <button>info</button>
@@ -24,7 +24,7 @@ date last change:	12-02-2019
              <div class='container'>
                 <div class='innerContainer'><!--begin innercontainer-->
                     <h4>Tabel Hijskraangegevens(2100)</h4><!--tilete fot page-->
-                    <table>
+                    <table class>
                         <td class="invisablecell" colspan="17" align="right">
                     <form>
                         <h6>opdrachtnummer</h6><input type="number"  placeholder="opdrachtnummer"> <br><!--ordernummer-->
@@ -42,14 +42,103 @@ date last change:	12-02-2019
                 </tr>
                     <br>
             <!--Begin table wil load info from A Datafile if it works-->
-                <tr><th >hijstesten</th><th colspan="3">opgesteld op</th><th colspan="4">Gieklengte</th><th colspan="3">Giekhoek</th><th colspan="4">Zwenkelhoek</th><th colspan="2">beproeving</th><th colspan="2">akoord</th></tr>
-                <tr><th></th><th>banden</th><th>Stempels</th><th>Rupsen</th><th>hoofd-<br>giek</th><th>mecha-<br>nische<br>sectie</th><th>hulp-<br>giek</th><th>Totale<br>giek<br>lengte</th><th>hoofd<br>giek</th><th>hulp-<br>giek</th><th>aantal<br>parten<br>hijskabel</th><th>R=360<br>A=achter<br>Z=zij<br>sV=Voorsector</th><th>Eingen<br>Massa<br>ballast <br>LMB code</th><th>Toelaatbere<br>bedrijfslast<br>bij inwerking</th><th>LMB<br>treedt in<br>bij werking bij</th><th>proeflast</th><th>Afwijking in %</th><th class='green'>ja  </th><th class='red'>Nee</th></tr>
-                <tr><th></th><th></th><th></th><th></th><th>m</th><th>m</th><th>m</th><th>m</th><th>gr</th><th>gr</th><th></th><th></th><th>t</th><th></th><th></th><th>m</th><th>t</th><th class="green"></th><th class="red"></th></tr>
+                <tr>
+                    <th class="blue">hijstesten</th>
+                    <th class="blue" colspan="3">opgesteld op</th>
+                    <th class="blue" colspan="4">Gieklengte</th>
+                    <th class="blue" colspan="3">Giekhoek</th>
+                    <th class="blue" colspan="4">Zwenkelhoek</th>
+                    <th class="blue" colspan="2">beproeving</th>
+                    <th class="blue" colspan="2">akoord</th>
+                </tr>
+
+                <tr>
+                    <th class="blue"></th>
+                    <th class="blue">banden</th>
+                    <th class="blue">Stempels</th>
+                    <th class="blue">Rupsen</th>
+                    <th class="blue">hoofd-<br>giek</th>
+                    <th class="blue">mecha-<br>nische<br>sectie</th>
+                    <th class="blue">hulp-<br>giek</th>
+                    <th class="blue">Totale<br>giek<br>lengte</th>
+                    <th class="blue">hoofd<br>giek</th>
+                    <th class="blue">hulp-<br>giek</th>
+                    <th class="blue">aantal<br>parten<br>hijskabel</th>
+                    <th class="blue">R=360<br>A=achter<br>Z=zij<br>sV=Voorsector</th>
+                    <th class="blue">Eingen<br>Massa<br>ballast <br>LMB code</th>
+                    <th class="blue">Toelaatbere<br>bedrijfslast<br>bij inwerking</th>
+                    <th class="blue">LMB<br>treedt in<br>bij werking bij</th>
+                    <th class="blue">proeflast</th>
+                    <th class="blue">Afwijking in %</th>
+                    <th class='green'>ja  </th>
+                    <th class='red'>Nee</th>
+                </tr>
+
+                <tr>
+                    <th class="blue"></th>
+                    <th class="blue"></th>
+                    <th class="blue"></th>
+                    <th class="blue"></th>
+                    <th class="blue">m</th>
+                    <th class="blue">m</th>
+                    <th class="blue">m</th>
+                    <th class="blue">m</th>
+                    <th class="blue">gr</th>
+                    <th class="blue">gr</th>
+                    <th class="blue"></th>
+                    <th class="blue"></th>
+                    <th class="blue">t</th>
+                    <th class="blue"></th>
+                    <th class="blue"></th>
+                    <th class="blue">m</th>
+                    <th class="blue">t</th>
+                    <th class="green"></th>
+                    <th class="red"></th>
+                </tr>
                
-                <tr><td>1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='green'></td><td class='red'></td></tr>
-                <tr><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='green'></td><td class='red'></td></tr>
-                <tr><td>3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='green'></td><td class='red'></td></tr>
-                <tr><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class='green'></td><td class='red'></td></tr>
+                <tr>
+                    <td class="white">1</td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class='green'></td>
+                    <td class='red'></td>
+                </tr>
+                        <tr>
+                        <td class="white">1</td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class='green'></td>
+                        <td class='red'></td>
+                    </tr>
+
                 <tr>
                     <td class="invisablecell" colspan="17" align="right">
                         <button>Exit</button>

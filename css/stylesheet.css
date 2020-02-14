@@ -1,19 +1,24 @@
+/*styling for the Tabel in general*/
 .table, th {
     border: 1px solid black;
-    background-color: rgb(145, 139, 139);
+
     max-width: 90%;
 }
+/*styling fot the"th* so it is Gray*/
 th{
     background-color: gray;
 }
+/*styling for the "td" so it is White */
 td{
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
     max-width: 90%;
 }
+/*class Red is used under cols under "nee"*/
 .red{
  background-color: #e4000f;
 }
+/*class green is used fot the cols that are under "ja"*/
 .green{
 background-color: #0e7a0d;
 }
@@ -25,6 +30,7 @@ background-color: #0e7a0d;
     margin-left:   15% ;
      
 }
+/*innner container styling uses around the Table*/
 .innerContainer{
     width: 100%;
     margin-left: 5%;
@@ -33,6 +39,7 @@ background-color: #0e7a0d;
     padding-left: 3%;
     background-color:azure;
 }
+/*Blockcontainer styling is used for the buttons top*/
 .blockContainer{
     width: 84%;
     margin-left: 8%;
@@ -40,7 +47,7 @@ background-color: #0e7a0d;
     padding-left: 3%;
     background-color:green; 
 } 
-
+/*for the styling for the invisble cells of the table*/
 .invisablecell{        
     border-color: #00000000;
     height: 25px;}
