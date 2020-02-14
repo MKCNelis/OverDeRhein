@@ -1,45 +1,51 @@
 body{
-    background-color: whitesmoke;
-    color: rgb(20, 20, 20)26, 26);
-    justify-content: center;
-    margin-left: 15%;
-
+    background-color: whitesmoke;     /*Background color*/
+    color: rgb(20, 20, 20);           /*Tekst color*/
+    justify-content: center;            /*Centers the first element after the body*/
+    margin-left: 15%;                   /*Adds margin to the left of the body*/
 }
 
-table, th, td {
+table, th, td {                         /*Defines the thickness and color of the borders of the table*/
     border: 1px solid black;
   }
 
-.tablecontainer{
+.tablecontainer{                        /*Adds margin to he main containerto center it*/
     margin-left: 60%;
     margin-right: auto;
 }
 
-.tablebluebackground{
+.tablebluebackground{                   /*Gives a lightsteelblue background*/
     background-color:lightsteelblue ;
 }
 
-.tablewhitebackground{
+.tablewhitebackground{                  /*Gives a white background*/
     background-color: white;
 }
 
-.tablegraybackground{
+.tablegraybackground{                   /*Gives a lightgray background*/
     background-color: lightgray;
 }
 
-.tableholder{
+.tableholder{                           /*Gives a lightgray background and adds margin*/
     background-color: lightgray;
     margin-left: 10%;
     margin-right: 10%;
 }
 
-.invisablecell{         /*voorcellen in de tabel die alleen de tekstmogenlaten zien en niet de cel*/
+.invisablecell{                         /*Makes the cell invisable*/
     border-color: #00000000;
     height: 25px;
 
 }
 
-.graysquare{
+.graysquare{                            /*Gives a gray background and gives a black border*/
     background-color: lightsteelblue;
     border-color: black;
 }
+
+.bottomdotted{                          /*Addsa dotted bottomline in the cell*/
+    border-bottom: dotted;
+}
+
+
+
