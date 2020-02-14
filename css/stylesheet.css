@@ -33,8 +33,9 @@ background-color: #0e7a0d;
 /*innner container styling uses around the Table*/
 .innerContainer{
     width: 100%;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: -1%;
+    margin-right: 5%;
     padding-top: 1%;
     padding-left: 3%;
     background-color:azure;
