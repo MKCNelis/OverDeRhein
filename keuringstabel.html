@@ -10,10 +10,10 @@
 <!--Stylesheet-->
 <link rel="stylesheet" href="./css.css">
 </head>
-<body>
+<body class='keuring'>
 
     <div>
-        <img src="./Afbeeldingen/Place image here.jpg" style: width="10%">
+        <center><img src="./Afbeeldingen/Place image here.jpg" style: width="10%"></center>
         <header style="float: right;"><h2>Hijstabel</h2></header>
         <br><br>
         <button>Bestand</button>
@@ -25,14 +25,45 @@
         <Table style="margin-left: auto; margin-right: auto; width: 80%;">
 
             <tr>
-                <td class="invisablecell" colspan="5"></td>     <!--onzichtbare row-->
+                <th class="invisablecell" colspan="5">Periodiek keuring voorblad keuringsrapport</th>     <!--onzichtbare row-->
+            </tr>
+            <tr>
+                <td class="invisablecell" colspan="6"></td>     <!--onzichtbare row-->
             </tr>
 
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1">Kabelchecklist</td>
-                <td class="invisablecell" colspan="3"><input type="number"></td>
-                <td class="invisablecell" colspan="1" style="border-right: black;">Opdrachtnummer:</td>
-                <td class="graysquare" colspan="1"><input type="number"></td>
+                <td class="invisablecell" colspan="1">opdrachtnummer</td>
+                <td colspan="3"><input type="number"></td>
+                <td class="invisablecell" colspan="1" style="border-right: black;">TCVT-nummer:</td>
+                <td colspan="1"><input type="number"></td>
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="invisablecell" colspan="1">opdrachtnummer</td>
+                <td colspan="1">keurings datum></td>
+                <td><input type="datetime-local"></td>
+               <td class='invisablecell' colspan="3"></td>
             </tr> 
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="invisablecell" colspan="1"></td>
+                <td colspan="1">uitgevoerd door</td>
+                <td class="invisablecell" colspan="1" style="border-right: black;"><input type="Name"></td>
+                <td class="invisablecell" colspan="1"></td>
+                <td class="invisablecell" colspan="1">deskundige</td>
+                <td colspan="1"><input type="name"></td>
+            </tr> 
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="invisablecell" colspan="1">opdrachtnummer</td>
+                <td colspan="3"><input type="number"></td>
+                <td class="invisablecell" colspan="1" style="border-right: black;">TCVT-nummer:</td>
+                <td colspan="1"><input type="number"></td>
+            </tr> 
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="invisablecell" colspan="1">opdrachtnummer</td>
+                <td colspan="3"><input type="number"></td>
+                <td class="invisablecell" colspan="1" style="border-right: black;">TCVT-nummer:</td>
+                <td colspan="1"><input type="number"></td>
+            </tr>  
+            
+        </Table>
 </body>
 </html>
