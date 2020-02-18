@@ -19,7 +19,7 @@ th{
 td{
     background-color: rgb(255, 255, 255);
     border: 1px solid black;
-    max-width: 100%;
+    max-width: 90%;
 }
 /*class Red is used under cols under "nee"*/
 .red{
@@ -33,20 +33,20 @@ background-color: #0e7a0d;
     background-color: white;
 }
 .container{
-    width:         100%;
+    width:         80%;
     margin-left:   10% ;
      
 }
 /*innner container styling uses around the Table*/
 .innerContainer{
-    width: 110%;
+    width: 100%;
     margin-left: 0%;
     margin-top: -1%;
     margin-right: 5%;
     padding-top: 1%;
     padding-left: 3%;
     background-color:azure;
-    overflow-x:auto;
+    overflow: x 50%;;
 }
 /*Blockcontainer styling is used for the buttons top*/
 .blockContainer{
