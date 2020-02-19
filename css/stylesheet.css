@@ -38,8 +38,11 @@ background-color: #0e7a0d;
 }
 
 .container{
-    width:         80%;
+    width:         100%;
     margin-left:   10% ;
+    margin-right: auto;
+    overflow: x 50%;
+    justify-content: center;
      
 }
 
@@ -52,7 +55,6 @@ background-color: #0e7a0d;
     padding-top: 1%;
     padding-left: 3%;
     background-color:azure;
-    overflow: x 50%;;
 }
 
 /*Blockcontainer styling is used for the buttons top*/
@@ -61,6 +63,7 @@ background-color: #0e7a0d;
     margin-left: 8%;
     padding-top: 1%;
     padding-left: 3%;
+    padding-right: 3%;
     background-color:green; 
 }
 
