@@ -49,3 +49,8 @@ table, th, td {                         /*Defines the thickness and color of the
 
 
 
+.keuring{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: auto;
+}
