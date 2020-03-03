@@ -39,28 +39,19 @@ table, th, td {                         /*Defines the thickness and color of the
 }
 
 .onlyBottomBorder{                         /*Makes the cell invisable exept for the bottom border*/
-    border-bottom: #00000000;
-    border-left: #00000000;
-    border-right: #00000000;
-    border-top: #00000000;
+    border-bottom: black;
     height: 25px;
 
 }
 
 .onlyTopBorder{                         /*Makes the cell invisable exept for the top border*/
-    border-bottom: #00000000;
-    border-left: #00000000;
-    border-right: #00000000;
     border-top: black;
     height: 25px;
 
 }
 
 .onlyLeftBorder{                         /*Makes the cell invisable exept for the left border*/
-    border-bottom: #00000000;
     border-left: black;
-    border-right: #00000000;
-    border-top: #00000000;
     height: 25px;
 
 }
