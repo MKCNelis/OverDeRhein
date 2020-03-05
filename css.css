@@ -46,12 +46,18 @@ table, th, td {                         /*Defines the thickness and color of the
 
 .onlyTopBorder{                         /*Makes the cell invisable exept for the top border*/
     border-top: black;
+    border-bottom: #00000000;                    
+    border-left: #00000000;
+    border-right: #00000000;
     height: 25px;
 
 }
 
-.onlyLeftBorder{                         /*Makes the cell invisable exept for the left border*/
+.onlyLeftBorder{                        /*Makes the cell invisable exept for the left border*/
+    border-bottom: #00000000;                    
     border-left: black;
+    border-right: #00000000;
+    border-top: #00000000;
     height: 25px;
 
 }
@@ -64,6 +70,28 @@ table, th, td {                         /*Defines the thickness and color of the
     height: 25px;
 
 }
+
+.noLeftBorder{
+    border-left: #00000000;
+
+}
+
+.noRightBorder{
+    border-right: #00000000;
+
+}
+
+.noTopBorder{
+    border-top: #00000000;
+
+}
+
+.noBottomBorder{
+    border-bottom: #00000000;
+
+}
+
+
 
 .graysquare{                            /*Gives a gray background and gives a black border*/
     background-color: lightsteelblue;
@@ -80,4 +108,11 @@ table, th, td {                         /*Defines the thickness and color of the
     margin-left: 5%;
     margin-right: 5%;
     padding: auto;
+}
+
+.overFlow{
+    overflow-x: auto;
+    overflow-y: none;
+    margin: 2.5%;
+    padding-bottom: 2.5%;
 }

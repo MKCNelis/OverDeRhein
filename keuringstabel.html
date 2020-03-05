@@ -21,8 +21,8 @@
     </div>
     <br>
     <br>
-    <div class="tableholder">
-        <Table style="margin-left: auto; margin-right: auto; width: 80%;">
+    <div class="tableholder overFlow">
+        <Table width="80%" style="margin-left: auto; margin-right: auto;">
 
             <tr>
                 <th class="invisablecell" colspan="5">Periodiek keuring voorblad keuringsrapport</th>     <!--onzichtbare row-->
@@ -32,9 +32,11 @@
             </tr>
 
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1">opdrachtnummer:</td>
+                <td class="invisablecell" colspan="1"><b>opdrachtnummer:</b></td>
                 <td colspan="2" class="invisablecell"><input type="number"></td>
-                <td class="invisablecell" colspan="2">TCVT-nummer:</td>
+                <td colspan="1" class="invisablecell"></td>
+                <td class="invisablecell" colspan="2"><b>TCVT-nummer:</b></td>
+                <td colspan="1" class="invisablecell"></td>
                 <td colspan="1" class="invisablecell"><input type="number"></td>
             </tr>
 
@@ -43,18 +45,22 @@
             </tr>
 
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="onlyLeftBorder" colspan="1">opdrachtnummer</td>
-                <td class="" colspan="1">keurings datum></td>
-                <td class=""><input type="datetime-local"></td>
-                <td class="" colspan="3"></td>
+                <td class="noRightBorder noBottomBorder" colspan="1"><b>Keuring</b></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1">keurings datum</td>
+                <td class="noLeftBorder noRightBorder noBottomBorder"><input type="datetime-local"></td>
+                <td colspan="1" class="invisablecell"></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="3"></td>
+                <td class="noLeftBorder noBottomBorder" colspan="3"></td>
             </tr> 
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td class="invisablecell" colspan="1">uitgevoerd door</td>
-                <td class="invisablecell" colspan="1"><input type="Name"></td>
-                <td class="invisablecell" colspan="1"></td>
-                <td class="invisablecell" colspan="1">deskundige</td>
-                <td class="invisablecell" colspan="1"><input type="name"></td>
+                <td class="noRightBorder noTopBorder" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1">uitgevoerd door</td>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1"><input type="Name"></td>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1">deskundige</td>
+                <td colspan="1" class="invisablecell"></td>
+                <td class="noLeftBorder noRightBorder  noTopBorder" colspan="1"></td>
+                <td class="noLeftBorder noTopBorder" colspan="1"><input type="name"></td>
             </tr> 
 
             <tr>
@@ -62,77 +68,80 @@
             </tr>
             
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1">uitvoeringkraan</td>
+                <td class="" colspan="1">uitvoeringkraan</td>
                 <td colspan="1">uitvoering onderwagen</td>
-                <td class="graysquare" colspan="1" ></td>
+
                 <td colspan="1">uitvoering Toren</td>
-                <td class="graysquare" colspan="2" ></td>
+
             </tr>
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="2"></td>
-                <td class="graysquare" colspan="1" ></td>
+                <td class="" colspan="2"></td>
+
                 <td colspan="1"><input type="checkbox">haakhoogte</td>
-                <td class="graysquare" colspan="1" ></td>
+                <td><input type="text"></td>
             </tr>    
+
+            <tr>
+                <td class="invisablecell" colspan="6"></td>     <!--onzichtbare row-->
+            </tr>
+
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="2"></td>
-                <td class="graysquare" colspan="1" ></td>
+                <td class="" colspan="2"></td>
                 <td colspan="1"><input type="checkbox">telescoop</td>
-                <td class="graysquare" colspan="1" ></td>
-                <td colspan="1"><input type="checkbox">haakhoogte</td>
+                <td><input type="text"></td>
+                <td colspan="1"><input type="checkbox">gieklengte</td>
+                <td><input type="text"></td>
+                <td colspan="1" class="invisablecell">biep</td>
             </tr>   
+            
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="2"></td>
-                <td class="graysquare" colspan="1" ></td>
+                <td class="" colspan="2"></td>
                 <td colspan="1"><input type="checkbox">opbouw giek</td>
-                <td class="graysquare" colspan="1" ></td>
+                <td><input type="text"></td>
                 <td colspan="1"><input type="checkbox">topbaar</td>
+                <td><input type="text"></td>
             </tr>
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="2"></td>
-                <td class="graysquare" colspan="1" ></td>
+                <td class="" colspan="2"></td>
                 <td colspan="1"><input type="checkbox">hulpgiek</td>
-                <td class="graysquare" colspan="1" ></td>
+                <td><input type="text"></td>
                 <td colspan="1"><input type="checkbox">met loopkat</td>
             </tr>
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
+                <td class="" colspan="1"></td>
                 <td colspan="1"><input type="checkbox">Railstellen(spoorbreete/wielbalast</td>
-                <td class="graysquare" colspan="1" ></td>
                 <td colspan="1"><input type="checkbox">knikgiek</td>
-                <td class="graysquare" colspan="1" ></td>
+                <td colspan="1"></td>
                 <td colspan="1"><input type="checkbox">verstelbare giek</td>
             </tr>
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
+                <td class="" colspan="1"></td>
                 <td colspan="1"><input type="checkbox">rijdend</td>
-                <td class="graysquare" colspan="1" ></td>
                 <td colspan="1"><input type="checkbox">monogiek</td>
-                <td class="graysquare" colspan="1" ></td>
-                <td colspan="1"><input type="checkbox">haakhoogte</td>
-            </tr> 
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td colspan="1"><input type="checkbox">stationare</td>
-                <td class="graysquare" colspan="1" ></td>
-                <td colspan="1"><input type="checkbox">fly-jib</td>
-                <td class="graysquare" colspan="1" ></td>
-                <td colspan="1">stempel</td>
-            </tr> 
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td colspan="1"><input type="checkbox">ingietframe</td>
-                <td class="graysquare" colspan="1" ></td>
+                <td><input type="text"></td>
                 <td colspan="1"></td>
-                <td class="graysquare" colspan="1" ></td>
+            </tr> 
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="" colspan="1"></td>
+                <td colspan="1"><input type="checkbox">stationare</td>
+                <td colspan="1"><input type="checkbox">fly-jib</td>
+                <td><input type="text"></td>
+                <td colspan="1"><b>stempels</b></td>
+            </tr> 
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="" colspan="1"></td>
+                <td colspan="1"><input type="checkbox">ingietframe</td>
+
+                <td colspan="1"></td>
+                <td colspan="1"></td>
                 <td colspan="1"><input type="checkbox">stempel</td>
             </tr>
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
+                <td class="" colspan="1"></td>
                 <td colspan="1"><input type="checkbox">vrijstaand(kruisframe onderwagen zonder railstellen</td>
-                <td class="graysquare" colspan="1" ></td>
+
                 <td colspan="1"></td>
-                <td class="graysquare" colspan="1" ></td>
+                <td colspan="1"></td>
                 <td colspan="1"><input type="checkbox">stempel</td>
             </tr>
         </Table>
