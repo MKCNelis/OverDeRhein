@@ -47,7 +47,7 @@ table, th, td {                         /*Defines the thickness and color of the
 .onlyTopBorder{                         /*Makes the cell invisable exept for the top border*/
     border-top: black;
     border-bottom: #00000000;                    
-    border-left: #00000000;
+    border-left-color: #00000000;
     border-right: #00000000;
     height: 25px;
 
@@ -72,22 +72,26 @@ table, th, td {                         /*Defines the thickness and color of the
 }
 
 .noLeftBorder{
-    border-left: #00000000;
+    border-left-color: #00000000;
+    height: 25px;
 
 }
 
 .noRightBorder{
-    border-right: #00000000;
+    border-right-color: #00000000;
+    height: 25px;
 
 }
 
 .noTopBorder{
-    border-top: #00000000;
+    border-top-color: #00000000;
+    height: 25px;
 
 }
 
 .noBottomBorder{
-    border-bottom: #00000000;
+    border-bottom-color: #00000000;
+    height: 25px;
 
 }
 
