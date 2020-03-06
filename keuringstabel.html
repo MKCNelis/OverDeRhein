@@ -21,8 +21,8 @@
     </div>
     <br>
     <br>
-    <div class="tableholder">
-        <Table style="margin-left: auto; margin-right: auto; width: 80%;">
+    <div class="tableholder overFlow">
+        <Table width="80%" style="margin-left: auto; margin-right: auto;">
 
             <tr>
                 <th class="invisablecell" colspan="5">Periodiek keuring voorblad keuringsrapport</th>     <!--onzichtbare row-->
@@ -32,74 +32,162 @@
             </tr>
 
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1">opdrachtnummer</td>
-                <td colspan="3"><input type="number"></td>
-                <td class="invisablecell" colspan="1" style="border-right: black;">TCVT-nummer:</td>
-                <td colspan="1"><input type="number"></td>
+                <td class="invisablecell" colspan="1"><b>opdrachtnummer:</b></td>
+                <td colspan="2" class="invisablecell"><input type="number"></td>
+                <td colspan="1" class="invisablecell"></td>
+                <td class="invisablecell" colspan="2"><b>TCVT-nummer:</b></td>
+                <td colspan="1" class="invisablecell"></td>
+                <td colspan="1" class="invisablecell"><input type="number"></td>
             </tr>
+
+            <tr>
+                <td class="invisablecell onlyBottomBorder" colspan="6"></td>     <!--onzichtbare row-->
+            </tr>
+
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1">opdrachtnummer</td>
-                <td colspan="1">keurings datum></td>
-                <td><input type="datetime-local"></td>
-               <td class='invisablecell' colspan="3"></td>
+                <td class="noRightBorder noBottomBorder" colspan="1"><b>Keuring</b></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1">keurings datum</td>
+                <td class="noLeftBorder noRightBorder noBottomBorder"><input type="datetime-local"></td>
+                <td class="invisablecell" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="3"></td>
+                <td class="noLeftBorder noBottomBorder" colspan="3"></td>
             </tr> 
             <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noTopBorder" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1">uitgevoerd door</td>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1"><input type="Name"></td>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1">deskundige</td>
                 <td class="invisablecell" colspan="1"></td>
-                <td colspan="1">uitgevoerd door</td>
-                <td class="invisablecell" colspan="1" style="border-right: black;"><input type="Name"></td>
-                <td class="invisablecell" colspan="1"></td>
-                <td class="invisablecell" colspan="1">deskundige</td>
-                <td colspan="1"><input type="name"></td>
+                <td class="noLeftBorder noRightBorder  noTopBorder" colspan="1"></td>
+                <td class="noLeftBorder noTopBorder" colspan="1"><input type="name"></td>
             </tr> 
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1">materialen</td>
-                <td colspan="2">hijskraan</td>
-                <td class="invisablecell" colspan="1">onderwagen</td>
-                <td colspan="1"></td>
-            </tr> 
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td colspan="1">fabrikant</td>
-                <td class="invisablecell" colspan="1" ><input type="datetime"></td>
-                <td colspan="1">fabrikant</td>
-                <td class="invisablecell" colspan="1" ><input type="datetime"></td>
+
+            <tr>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="8"></td>     <!--onzichtbare row-->
             </tr>
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td colspan="1">fabrikant</td>
-                <td class="invisablecell" colspan="1" ><input type="datetime"></td>
-                <td colspan="1">fabrikant</td>
-                <td class="invisablecell" colspan="1" ><input type="datetime"></td>
-            </tr>
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td colspan="1">fabrikant</td>
-                <td class="invisablecell" colspan="1" ><input type="datetime"></td>
-                <td colspan="1">fabrikant</td>
-                <td class="invisablecell" colspan="1" ><input type="datetime"></td>
-            </tr>
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td colspan="1">fabrikant</td>
-                <td class="invisablecell" colspan="1" ><input type="datetime"></td>
-                <td colspan="1">fabrikant</td>
-                <td class="invisablecell" colspan="1" ><input type="datetime"></td>
-            </tr>
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td colspan="1">fabrikant</td>
-                <td class="invisablecell" colspan="1" ><input type="datetime"></td>
-                <td colspan="1">fabrikant</td>
-                <td class="invisablecell" colspan="1" ><input type="datetime"></td>
-            </tr>
-              <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td colspan="1">fabrikant</td>
-                <td class="invisablecell" colspan="1" ><input type="datetime"></td>
-                <td colspan="1">fabrikant</td>
-                <td class="invisablecell" colspan="1" ><input type="datetime"></td>
-            </tr>  
             
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noBottomBorder" colspan="1"><b>uitvoeringkraan</b></td>
+                <td class="noRightBorder noTopBorder noBottomBorder" colspan="1">uitvoering onderwagen</td>
+
+                <td class="noRightBorder noTopBorder noBottomBorder" colspan="1">uitvoering Toren</td>
+                <td class="noTopBorder noBottomBorder" colspan="5"></td>
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noBottomBorder" colspan="2"></td>
+
+                <td class="noRightBorder noBottomBorder" colspan="1"><input type="checkbox">haakhoogte</td>
+                <td class="noRightBorder noBottomBorder"><input type="text"></td>
+                <td class="noBottomBorder" colspan="4"></td>
+            </tr>    
+
+            <tr>
+                <td class="noTopBorder noBottomBorder" colspan="8"></td>     <!--onzichtbare row-->
+            </tr>
+
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noTopBorder noBottomBorder" colspan="2"></td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">telescoop</td>
+                <td class="invisablecell"><input type="text"></td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">gieklengte</td>
+                <td class="invisablecell"><input type="text"></td>
+                <td class="noLeftBorder noBottomBorder noTopBorder" colspan="2"></td>
+            </tr>   
+            
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noTopBorder noBottomBorder" colspan="2"></td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">opbouw giek</td>
+                <td class="invisablecell"><input type="text"></td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">topbaar</td>
+                <td class="invisablecell"><input type="text"></td>
+                <td class="noLeftBorder noBottomBorder noTopBorder" colspan="2"></td>
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noTopBorder noBottomBorder" colspan="1"></td>
+                <td class="noRightBorder noTopBorder noBottomBorder" colspan="1"><b>Opstelling:</b></td>
+                <td colspan="1" class="invisablecell"><input type="checkbox">hulpgiek</td>
+                <td class="invisablecell"><input type="text"></td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">met loopkat</td>
+                <td colspan="2" class="invisablecell"></td>
+                <td colspan="1" class="noLeftBorder noBottomBorder noTopBorder"></td>
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noTopBorder noBottomBorder" colspan="1"></td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">Railstellen(spoorbreete/wielbalast</td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">knikgiek</td>
+                <td class="invisablecell" colspan="1"></td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">verstelbare giek</td>
+                <td class="noLeftBorder noBottomBorder noTopBorder" colspan="3"></td>
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noTopBorder noBottomBorder" colspan="1"></td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">rijdend</td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">monogiek</td>
+                <td class="invisablecell"><input type="text"></td>
+                <td class="invisablecell" colspan="1"></td>
+                <td class="noLeftBorder noBottomBorder noTopBorder" colspan="3"></td>
+            </tr> 
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noTopBorder noBottomBorder" colspan="1"></td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">stationare</td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">fly-jib</td>
+                <td class="invisablecell"><input type="text"></td>
+                <td class="invisablecell" colspan="1"><b>stempels</b></td>
+                <td class="noLeftBorder noBottomBorder noTopBorder" colspan="3"></td>
+            </tr> 
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noTopBorder noBottomBorder" colspan="1"></td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">ingietframe</td>
+                <td class="invisablecell" colspan="1"></td>
+                <td class="invisablecell" colspan="1"></td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">stempel</td>
+                <td class="noLeftBorder noBottomBorder noTopBorder" colspan="3"></td>
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noTopBorder" colspan="1"></td>
+                <td class="noRightBorder" colspan="1"><input type="checkbox">vrijstaand(kruisframe onderwagen zonder railstellen</td>
+
+                <td class="noRightBorder" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder" colspan="1"></td>
+                <td class="noRightBorder" colspan="1"><input type="checkbox">dozerblad</td>
+                <td class="noLeftBorder noTopBorder" colspan="3"></td>
+            </tr>
         </Table>
+        <br>
+        <table width="80%" style="margin-left: auto; margin-right: auto;">
+
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noTopBorder " colspan="1">bevindingen</td>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1"><input type="checkbox">Tekortkoming A of B</td>
+                <td colspan="1"></td>
+                <td colspan="1"><input type="checkbox">ja</td>
+                <td colspan="1"><input type="checkbox">nee</td>
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noTopBorder " colspan="1"></td>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1" >Afgemeld door</td>
+                <td class="noRightBorder noTopBorder  noLeftBorder "><input type="text"></td>
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="invisablecell" colspan="1"></td>
+                <td class="noRightBorder noTopBorder " colspan="5" >Directe voorzieningen voordat de kraan weer in gebruik gesteld hier bij herkeurung vereist is</td>
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <tr>
+                    <td colspan="5"><textarea name="" id="" cols="130" rows="6"></textarea></td>
+    
+                </tr>
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="invisablecell" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder no" colspan="5" >toelichting</td>
+            </tr>
+            <tr>
+                <td colspan="5"><textarea name="" id="" cols="130" rows="8"></textarea></td>
+
+            </tr>
+            
+        </table>
 </body>
 </html>
