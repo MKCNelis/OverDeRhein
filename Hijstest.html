@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+name document:		Hijstest.html
+author:				Maikel Nelis
+date of creation:	12-02-2019
+document function:	systeenm voor hijstesten
+date last change:	18-02-2019
+-->
+<html>
+    <head> <!--styling-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <link rel='stylesheet' Type='text/css' href="CSS\stylesheet.css">
+    </head>
+        <body><!--bodyclass for styling-->
+            <div class='blockContainer'>
+                <button>bestand</button>
+                <button>info</button>
+            </div>
+            <br><br>
+             <div class='container'>
+                <div class='innerContainer'><!--begin innercontainer-->
+                    <h4>Tabel Hijskraangegevens(2100)</h4><!--tilete fot page-->
+                    <table class="tablestyle">
+                        <td class="invisablecell" colspan="17" align="right">
+                    <form>
+                        <h6>opdrachtnummer</h6><input type="number"  placeholder="opdrachtnummer"> <br><!--ordernummer-->
+                    </form>
+                        </td>
+                        <tr>
+                    <td class="invisablecell" colspan="17" align="left"><!--text With formula-->
+                    <p>Bepaal(bereken of lesst af uit de tabel) de toelaatbare hijslast bij gemeten vlucht.<br>
+                         vereken vervolgens de afwijken met de volgende Formule<br>
+                        (proeflast-toelaatberehuislast)<br>
+                        _______________________________<br>
+                    afwijking= toelatbare hijslast *100%
+                        </p>
+                    </td>
+                </tr>
+                    <br>
+            <!--Begin table wil load info from A Datafile if it works-->
+                <tr>
+                    <th class="blue">hijstesten</th>
+                    <th class="blue" colspan="3">opgesteld op</th>
+                    <th class="blue" colspan="4">Gieklengte</th>
+                    <th class="blue" colspan="3">Giekhoek</th>
+                    <th class="blue" colspan="4">Zwenkelhoek</th>
+                    <th class="blue" colspan="2">beproeving</th>
+                    <th class="blue" colspan="2">akoord</th>
+                </tr>
+
+                <tr>
+                    <th class="blue"></th>
+                    <th class="blue">banden</th>
+                    <th class="blue">Stempels</th>
+                    <th class="blue">Rupsen</th>
+                    <th class="blue">hoofd-<br>giek</th>
+                    <th class="blue">mecha-<br>nische<br>sectie</th>
+                    <th class="blue">hulp-<br>giek</th>
+                    <th class="blue">Totale<br>giek<br>lengte</th>
+                    <th class="blue">hoofd<br>giek</th>
+                    <th class="blue">hulp-<br>giek</th>
+                    <th class="blue">aantal<br>parten<br>hijskabel</th>
+                    <th class="blue">R=360<br>A=achter<br>Z=zij<br>sV=Voorsector</th>
+                    <th class="blue">Eingen<br>Massa<br>ballast <br>LMB code</th>
+                    <th class="blue">Toelaatbere<br>bedrijfslast<br>bij inwerking</th>
+                    <th class="blue">LMB<br>treedt in<br>bij werking bij</th>
+                    <th class="blue">proeflast</th>
+                    <th class="blue">Afwijking in %</th>
+                    <th class='green'>ja  </th>
+                    <th class='red'>Nee</th>
+                </tr>
+
+                <tr>
+                    <th class="blue"></th>
+                    <th class="blue"></th>
+                    <th class="blue"></th>
+                    <th class="blue"></th>
+                    <th class="blue">m</th>
+                    <th class="blue">m</th>
+                    <th class="blue">m</th>
+                    <th class="blue">m</th>
+                    <th class="blue">gr</th>
+                    <th class="blue">gr</th>
+                    <th class="blue"></th>
+                    <th class="blue"></th>
+                    <th class="blue">t</th>
+                    <th class="blue"></th>
+                    <th class="blue"></th>
+                    <th class="blue">m</th>
+                    <th class="blue">t</th>
+                    <th class="green"></th>
+                    <th class="red"></th>
+                </tr>
+               
+                <tr>
+                    <td class="white">1</td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class="white"></td>
+                    <td class='green'></td>
+                    <td class='red'></td>
+                </tr>
+                        <tr>
+                        <td class="white">1</td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class="white"></td>
+                        <td class='green'></td>
+                        <td class='red'></td>
+                    </tr>
+
+                <tr>
+                    <td class="invisablecell" colspan="17" align="right">
+                        <button>Exit</button>
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        </body>
+    <footer>
+
+    </footer>
+</html>
