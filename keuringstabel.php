@@ -37,8 +37,8 @@ function LoadArray(){
     return($aReadArray);
 }
 // Declare the Variables
-    $sOpdrachtnummer = "";
-    $sTVCTNummer = "";
+    $iOpdrachtnummer = "";
+    $iTVCTNummer = "";
     $sDatum = "";
     $sOparator = "";
     $sDeskundigen = "";
@@ -75,8 +75,8 @@ function LoadArray(){
 if(!empty($_POST)) {
     var_dump($_POST);
 
-    $sOpdrachtnummer = $_POST ['sOPdrachtnummer'];
-    $sTVCTNummer= $_POST ['sTVCTNummer'];
+    $iOpdrachtnummer = $_POST ['sOPdrachtnummer'];
+    $iTVCTNummerTVCTNummer= $_POST ['sTVCTNummer'];
     $sDatum =$_POST ['sDatum'];
     $sOparator=$_POST ['sOparator'];
     $sDeskundigen=$_POST ['sDeskundligen'];
