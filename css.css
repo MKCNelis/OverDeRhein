@@ -71,6 +71,7 @@ table, th, td {                         /*Defines the thickness and color of the
 
 }
 
+
 .noLeftBorder{
     border-left-color: #00000000;
     height: 25px;
@@ -94,6 +95,7 @@ table, th, td {                         /*Defines the thickness and color of the
     height: 25px;
 
 }
+
 
 
 
