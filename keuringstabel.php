@@ -162,7 +162,7 @@ if(!empty($_POST)) {
             </tr>
 
             <tr>
-                <td class="invisablecell onlyBottomBorder" colspan="6"></td>     <!--onzichtbare row-->
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="6"></td>     <!--onzichtbare row-->
             </tr>
 
             <tr>    <!--onzichtbare row met tekst-->
