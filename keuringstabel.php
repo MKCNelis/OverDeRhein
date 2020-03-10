@@ -75,8 +75,8 @@ function LoadArray(){
 if(!empty($_POST)) {
     var_dump($_POST);
 
-    $iOpdrachtnummer = $_POST ['sOPdrachtnummer'];
-    $iTVCTNummerTVCTNummer= $_POST ['sTVCTNummer'];
+    $iOpdrachtnummer = $_POST ['iOPdrachtnummer'];
+    $iTVCTNummer= $_POST ['iTVCTNummer'];
     $sDatum =$_POST ['sDatum'];
     $sOparator=$_POST ['sOparator'];
     $sDeskundigen=$_POST ['sDeskundligen'];
@@ -91,7 +91,7 @@ if(!empty($_POST)) {
     $bTopbaar = $_POST ['bTopbaar'];
     $bHulpgiek = $_POST ['bHulphiek'];
     $bMetloopkat = $_POST [''];
-    $bRailstellenspoorbreetewielbalast = $_POST [''];
+    $bRailstellen = $_POST [''];
     $bVerstelbareGiek =$_POST ['bVerstelbareGiek'];
     $bRijdend =$_POST ['bRijdend'];
     $bMonogiek =$_POST ['bMonoGiek'];
@@ -154,11 +154,11 @@ if(!empty($_POST)) {
 
             <tr>    <!--onzichtbare row met tekst-->
                 <td class="invisablecell" colspan="1"><b>opdrachtnummer:</b></td>
-                <td colspan="2" class="invisablecell"><input type="number"></td>
+                <td colspan="2" class="invisablecell"><input type="number" name="iOpdrachtnummer"></td>
                 <td colspan="1" class="invisablecell"></td>
                 <td class="invisablecell" colspan="2"><b>TCVT-nummer:</b></td>
                 <td colspan="1" class="invisablecell"></td>
-                <td colspan="1" class="invisablecell"><input type="number"></td>
+                <td colspan="1" class="invisablecell"><input type="number" name="iTVCTNummer"></td>
             </tr>
 
             <tr>
@@ -168,7 +168,7 @@ if(!empty($_POST)) {
             <tr>    <!--onzichtbare row met tekst-->
                 <td class="noRightBorder noBottomBorder" colspan="1"><b>Keuring</b></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1">keurings datum</td>
-                <td class="noLeftBorder noRightBorder noBottomBorder"><input type="datetime-local"></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder"><input type="datetime-local" name="sDatum"></td>
                 <td class="invisablecell" colspan="1"></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="3"></td>
                 <td class="noLeftBorder noBottomBorder" colspan="3"></td>
@@ -176,12 +176,12 @@ if(!empty($_POST)) {
             <tr>    <!--onzichtbare row met tekst-->
                 <td class="noRightBorder noTopBorder" colspan="1"></td>
                 <td class="noLeftBorder noRightBorder noTopBorder" colspan="1">uitgevoerd door</td>
-                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1"><input type="Name"></td>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1"><input type="Name" name="sOparator"></td>
                 <td class="noLeftBorder noRightBorder noTopBorder" colspan="1"></td>
                 <td class="noLeftBorder noRightBorder noTopBorder" colspan="1">deskundige</td>
                 <td class="invisablecell" colspan="1"></td>
                 <td class="noLeftBorder noRightBorder  noTopBorder" colspan="1"></td>
-                <td class="noLeftBorder noTopBorder" colspan="1"><input type="name"></td>
+                <td class="noLeftBorder noTopBorder" colspan="1"><input type="name" name="$sDeskundigen"></td>
             </tr> 
             <tr>
                 <td class="noRightBorder noBottomBorder" colspan="1">Materiaal</td>
@@ -231,7 +231,7 @@ if(!empty($_POST)) {
             <tr>
                 <td class="noRightBorder noBottomBorder" colspan="1"></td>
                 <td class="noBottomBorder noRightBorder noLeftBorder" colspan="1">bouwjaar:</td>
-                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"><input type="datetime-local"></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"><input type="datetime-local" name=""></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"><input type="text"></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
@@ -252,7 +252,7 @@ if(!empty($_POST)) {
             <tr>    <!--onzichtbare row met tekst-->
                 <td class="noRightBorder noBottomBorder" colspan="1"></td>
                 <td class=" noBottomBorder" colspan="1"><input type="checkbox">op banden(zelfrijdend</td>
-                <td class="noRightBorder noBottomBorder" colspan="1"><input type="checkbox">haakhoogte</td>
+                <td class="noRightBorder noBottomBorder" colspan="1"><input type="checkbox" name="bHaakHoogte">haakhoogte</td>
                 <td class="noRightBorder noBottomBorder"><input type="text"></td>
                 <td class="noBottomBorder" colspan="4"></td>
             </tr>    
@@ -263,10 +263,10 @@ if(!empty($_POST)) {
 
             <tr>    <!--onzichtbare row met tekst-->
                 <td class="noRightBorder noTopBorder noBottomBorder" colspan="1"></td>
-                <td class=" noBottomBorder" colspan="1"><input type="checkbox">op truck</td>
-                <td class="invisablecell" colspan="1"><input type="checkbox">telescoop</td>
+                <td class=" noBottomBorder" colspan="1"><input type="checkbox" name="">op truck</td>
+                <td class="invisablecell" colspan="1"><input type="checkbox" name="bTelescoop">telescoop</td>
                 <td class="invisablecell"><input type="text"></td>
-                <td class="invisablecell" colspan="1"><input type="checkbox">gieklengte</td>
+                <td class="invisablecell" colspan="1"><input type="checkbox" name="bGiekLengte">gieklengte</td>
                 <td class="invisablecell"><input type="text"></td>
                 <td class="noLeftBorder noBottomBorder noTopBorder" colspan="2"></td>
             </tr>   
@@ -274,9 +274,9 @@ if(!empty($_POST)) {
             <tr>    <!--onzichtbare row met tekst-->
                 <td class="noRightBorder noTopBorder noBottomBorder" colspan="1"></td>
                 <td class=" noBottomBorder" colspan="1"><input type="checkbox">weg-/ruwterein(kenteken)</td>
-                <td class="invisablecell" colspan="1"><input type="checkbox">opbouw giek</td>
+                <td class="invisablecell" colspan="1"><input type="checkbox" name="bOpbouwGiek">opbouw giek</td>
                 <td class="invisablecell"><input type="text"></td>
-                <td class="invisablecell" colspan="1"><input type="checkbox">topbaar</td>
+                <td class="invisablecell" colspan="1"><input type="checkbox" name="bTopbaar">topbaar</td>
                 <td class="invisablecell"><input type="text"></td>
                 <td class="noLeftBorder noBottomBorder noTopBorder" colspan="2"></td>
             </tr>
@@ -292,9 +292,9 @@ if(!empty($_POST)) {
             <tr>    <!--onzichtbare row met tekst-->
                 <td class="noRightBorder noTopBorder noBottomBorder" colspan="1"></td>
                 <td class="invisablecell" colspan="1"><input type="checkbox">Railstellen(spoorbreete/wielbalast</td>
-                <td class="invisablecell" colspan="1"><input type="checkbox">knikgiek</td>
+                <td class="invisablecell" colspan="1"><input type="checkbox" name="bKnikgiek">knikgiek</td>
                 <td class="invisablecell" colspan="1"></td>
-                <td class="invisablecell" colspan="1"><input type="checkbox">verstelbare giek</td>
+                <td class="invisablecell" colspan="1"><input type="checkbox" name="bVerstelbaregiek">verstelbare giek</td>
                 <td class="noLeftBorder noBottomBorder noTopBorder" colspan="3"></td>
             </tr>
             <tr>    <!--onzichtbare row met tekst-->
