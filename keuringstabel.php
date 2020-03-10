@@ -274,41 +274,48 @@ if(!empty($_POST)) {
                 <td class="noRightBorder" colspan="1"><input type="checkbox">dozerblad</td>
                 <td class="noLeftBorder noTopBorder" colspan="3"></td>
             </tr>
-        </Table>
-        <br>
-        <table width="80%" style="margin-left: auto; margin-right: auto;">
 
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="noRightBorder noTopBorder " colspan="1">bevindingen</td>
-                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1"><input type="checkbox">Tekortkoming A of B</td>
-                <td colspan="1"></td>
-                <td colspan="1"><input type="checkbox">ja</td>
-                <td colspan="1"><input type="checkbox">nee</td>
-            </tr>
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="noRightBorder noTopBorder " colspan="1"></td>
-                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1" >Afgemeld door</td>
-                <td class="noRightBorder noTopBorder  noLeftBorder "><input type="text"></td>
-            </tr>
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td class="noRightBorder noTopBorder " colspan="5" >Directe voorzieningen voordat de kraan weer in gebruik gesteld hier bij herkeurung vereist is</td>
-            </tr>
-            <tr>    <!--onzichtbare row met tekst-->
-                <tr>
-                    <td colspan="5"><textarea name="" id="" cols="130" rows="6"></textarea></td>
-    
-                </tr>
-            </tr>
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td class="noLeftBorder noRightBorder no" colspan="5" >toelichting</td>
-            </tr>
             <tr>
-                <td colspan="5"><textarea name="" id="" cols="130" rows="8"></textarea></td>
-
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="6"></td>
             </tr>
-            
+
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noBottomBorder noRightBorder" colspan="1"><b>bevindingen</b></td>
+                <td class="noBottomBorder noLeftBorder noRightBorder" colspan="1"><input type="checkbox">Tekortkoming A of B</td>
+                <td class="noBottomBorder noLeftBorder noRightBorder" colspan="1"></td>
+                <td class="noBottomBorder noLeftBorder noRightBorder" colspan="1"><input type="checkbox">ja</td>
+                <td class="noBottomBorder noLeftBorder noRightBorder" colspan="1"><input type="checkbox">nee</td>
+                <td class="noBottomBorder noLeftBorder" colspan="3"></td>
+                
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noTopborder noBottomBorder noRightBorder" colspan="1"></td>
+                <td class="invisablecell" colspan="1" >Afgemeld door</td>
+                <td class="noTopborder noBottomBorder noLeftBorder" colspan="6"><input type="text"></td>
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noTopborder noBottomBorder noRightBorder" colspan="1"></td>
+                <td class="noTopborder noBottomBorder noLeftBorder" colspan="7" >Directe voorzieningen voordat de kraan weer in gebruik gesteld hier bij herkeurung vereist is</td>
+            </tr>       
+                <tr>
+                    <td class="noTopborder noBottomBorder noRightBorder"></td>
+                    <td class="noTopborder noBottomBorder noLeftBorder" colspan="7"><textarea name="" id="" cols="157" rows="3"></textarea></td>    
+                </tr>            
+            <tr>    
+                <td class="noTopborder noBottomBorder noRightBorder" colspan="1"></td>
+                <td class="noTopborder noBottomBorder noLeftBorder" colspan="7" ><b>toelichting</b></td>
+            </tr>
+
+            <tr>
+                <td class="noBottomBorder noRightBorder noTopBorder"></td>
+                <td class="noTopborder noBottomBorder noLeftBorder" colspan="7"><textarea name="" id="" cols="157" rows="8"></textarea></td>
+            </tr>
+
+            <tr>
+            <td class="noTopBorder" colspan="8" ></td>
+            </tr>
+
         </table>
+    </div>
 </body>
 </html>
