@@ -75,40 +75,40 @@ function LoadArray(){
 if(!empty($_POST)) {
     var_dump($_POST);
 
-    $iOpdrachtnummer = $_POST ['iOPdrachtnummer'];
-    $iTVCTNummer= $_POST ['iTVCTNummer'];
-    $sDatum =$_POST ['sDatum'];
-    $sOparator=$_POST ['sOparator'];
-    $sDeskundigen=$_POST ['sDeskundligen'];
-    $sUitvoeringDoor = $_POST ['sUuitvoeringDoor'];
-    $bUitvoeringKraan = $_POST ['bUitvoeringKraan'];
-    $bUitvoeringOnderwagen = $_POST ['uUitvoeringOnderwagen'];
-    $bUitvoeringToren = $_POST ['bUitvoeringtoren'];
-    $bHaakHoogte = $_POST ['bHaakHoogte'];
-    $bTelescoop = $_POST ['bTelescoop'];
-    $bHaakhoogte = $_POST ['bHaakHoogte'];
-    $bOpbouwGiek = $_POST ['bOpbouGiek'];
-    $bTopbaar = $_POST ['bTopbaar'];
-    $bHulpgiek = $_POST ['bHulphiek'];
-    $bMetloopkat = $_POST [''];
-    $bRailstellen = $_POST [''];
-    $bVerstelbareGiek =$_POST ['bVerstelbareGiek'];
-    $bRijdend =$_POST ['bRijdend'];
-    $bMonogiek =$_POST ['bMonoGiek'];
-    $bHaakhoogte =$_POST ['bHaakHoogte'];
-    $bStationare =$_POST ['bStationare'];
-    $bFlyJib =$_POST ['bFlyJib'];
-    $bBingietframe =$_POST ['bBinggietFrame'];
-    $bStempel =$_POST ['bStempel'];
-    $bVrijstaand =$_POST ['bVrijStaand'];
-    $bStempel =$_POST ['bStempel'];
-    $bBevindingen =$_POST ['bBevindingen'];
-    $bTekortkomingAofB =$_POST ['Btekortkoming'];
-    $bJa =$_POST ['bJa'];
-    $bNee =$_POST ['bNee'];
-    $sAfgemeldDoor =$_POST ['aAfmelding'];
-    $sDirecteVoorzieningen =$_POST ['sDirecteVoorzieningen'];
-    $sToelichting =$_POST ['sToelichting'];
+    $iOpdrachtnummer = $_POST['iOPdrachtnummer'];
+    $iTVCTNummer= $_POST['iTVCTNummer'];
+    $sDatum =$_POST['sDatum'];
+    $sOparator=$_POST['sOparator'];
+    $sDeskundigen=$_POST['sDeskundligen'];
+    $sUitvoeringDoor = $_POST['sUuitvoeringDoor'];
+    $bUitvoeringKraan = $_POST['bUitvoeringKraan'];
+    $bUitvoeringOnderwagen = $_POST['uUitvoeringOnderwagen'];
+    $bUitvoeringToren = $_POST['bUitvoeringtoren'];
+    $bHaakHoogte = $_POST['bHaakHoogte'];
+    $bTelescoop = $_POST['bTelescoop'];
+    $bHaakhoogte = $_POST['bHaakHoogte'];
+    $bOpbouwGiek = $_POST['bOpbouGiek'];
+    $bTopbaar = $_POST['bTopbaar'];
+    $bHulpgiek = $_POST['bHulphiek'];
+    $bMetloopkat = $_POST[''];
+    $bRailstellen = $_POST[''];
+    $bVerstelbareGiek =$_POST['bVerstelbareGiek'];
+    $bRijdend =$_POST['bRijdend'];
+    $bMonogiek =$_POST['bMonoGiek'];
+    $bHaakhoogte =$_POST['bHaakHoogte'];
+    $bStationare =$_POST['bStationare'];
+    $bFlyJib =$_POST['bFlyJib'];
+    $bBingietframe =$_POST['bBinggietFrame'];
+    $bStempel =$_POST['bStempel'];
+    $bVrijstaand =$_POST['bVrijStaand'];
+    $bStempel =$_POST['bStempel'];
+    $bBevindingen =$_POST['bBevindingen'];
+    $bTekortkomingAofB =$_POST['bTekortkoming'];
+    $bJa =$_POST['bJa'];
+    $bNee =$_POST['bNee'];
+    $sAfgemeldDoor =$_POST['aAfmelding'];
+    $sDirecteVoorzieningen =$_POST['sDirecteVoorzieningen'];
+    $sToelichting =$_POST['sToelichting'];
 //     load the database
     $aDatabase = LoadArray();
     // Count the number of records in the database
@@ -142,6 +142,7 @@ if(!empty($_POST)) {
     </div>
     <br>
     <br>
+    <form>
     <div class="tableholder overFlow">
         <Table width="80%" style="margin-left: auto; margin-right: auto;">
 
@@ -299,7 +300,7 @@ if(!empty($_POST)) {
             </tr>
             <tr>    <!--onzichtbare row met tekst-->
                 <td class="noRightBorder noTopBorder noBottomBorder" colspan="1"></td>
-                <td class="invisablecell" colspan="1"><input type="checkbox">rijdend</td>
+                <td class="invisablecell" colspan="1"><input type="checkbox" name="bRijdend">rijdend</td>
                 <td class="invisablecell" colspan="1"><input type="checkbox">monogiek</td>
                 <td class="invisablecell"><input type="text"></td>
                 <td class="invisablecell" colspan="1"></td>
@@ -366,5 +367,6 @@ if(!empty($_POST)) {
             </tr>
             
         </table>
+        </form>
 </body>
 </html>
