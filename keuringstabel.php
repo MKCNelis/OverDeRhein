@@ -146,12 +146,14 @@ if(!empty($_POST)) {
     <div class="tableholder overFlow">
         <Table width="80%" style="margin-left: auto; margin-right: auto;">
 
+
             <tr>
                 <th class="invisablecell" colspan="5">Periodiek keuring voorblad keuringsrapport</th>     <!--onzichtbare row-->
             </tr>
             <tr>
                 <td class="invisablecell" colspan="6"></td>     <!--onzichtbare row-->
             </tr>
+
 
             <tr>    <!--onzichtbare row met tekst-->
                 <td class="invisablecell" colspan="1"><b>opdrachtnummer:</b></td>
@@ -162,9 +164,11 @@ if(!empty($_POST)) {
                 <td colspan="1" class="invisablecell"><input type="number" name="iTVCTNummer"></td>
             </tr>
 
+
             <tr>
-                <td class="invisablecell onlyBottomBorder" colspan="6"></td>     <!--onzichtbare row-->
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="6"></td>     <!--onzichtbare row-->
             </tr>
+
 
             <tr>    <!--onzichtbare row met tekst-->
                 <td class="noRightBorder noBottomBorder" colspan="1"><b>Keuring</b></td>
@@ -183,7 +187,14 @@ if(!empty($_POST)) {
                 <td class="invisablecell" colspan="1"></td>
                 <td class="noLeftBorder noRightBorder  noTopBorder" colspan="1"></td>
                 <td class="noLeftBorder noTopBorder" colspan="1"><input type="name" name="$sDeskundigen"></td>
-            </tr> 
+            </tr>
+
+
+            <tr>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="8"></td>     <!--onzichtbare row-->
+            </tr>
+
+
             <tr>
                 <td class="noRightBorder noBottomBorder" colspan="1">Materiaal</td>
                 <td class="noBottomBorder noRightBorder noLeftBorder" colspan="1">hijskraan</td>
@@ -191,7 +202,7 @@ if(!empty($_POST)) {
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1">onderwagen</td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
-                <td class="noLeftBorder noBottomBorder" colspan="1"></td>
+                <td class="noLeftBorder noBottomBorder" colspan="2"></td>
             </tr>
             <tr>
                 <td class="noRightBorder noBottomBorder" colspan="1"></td>
@@ -200,7 +211,7 @@ if(!empty($_POST)) {
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1">fabrikaat</td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"><input type="text"></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
-                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
+                <td class="noLeftBorder noBottomBorder" colspan="2"></td>
             </tr>
             <tr>
                 <td class="noRightBorder noBottomBorder" colspan="1"></td>
@@ -209,7 +220,7 @@ if(!empty($_POST)) {
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1">model/type:</td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"><input type="text"></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
-                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
+                <td class="noLeftBorder noBottomBorder" colspan="2"></td>
             </tr>
             <tr>
                 <td class="noRightBorder noBottomBorder" colspan="1"></td>
@@ -218,7 +229,7 @@ if(!empty($_POST)) {
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1">indenticatienummer:</td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"><input type="number"></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
-                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
+                <td class="noLeftBorder noBottomBorder" colspan="2"></td>
             </tr>
             <tr>
                 <td class="noRightBorder noBottomBorder" colspan="1"></td>
@@ -227,31 +238,32 @@ if(!empty($_POST)) {
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1">bedrijfsnummer:</td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"><input type="number"></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
-                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
+                <td class="noLeftBorder noBottomBorder" colspan="2"></td>
             </tr>
             <tr>
-                <td class="noRightBorder noBottomBorder" colspan="1"></td>
-                <td class="noBottomBorder noRightBorder noLeftBorder" colspan="1">bouwjaar:</td>
-                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"><input type="datetime-local" name=""></td>
+                <td class="noRightBorder" colspan="1"></td>
+                <td class="noRightBorder noLeftBorder" colspan="1">bouwjaar:</td>
+                <td class="noLeftBorder noRightBorder" colspan="1"><input type="datetime-local"></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"><input type="text"></td>
                 <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
-                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1"></td>
+                <td class="noLeftBorder" colspan="2"></td>
             </tr>
 
 
             <tr>
-                <td class="noLeftBorder noRightBorder noTopBorder" colspan="8"></td>     <!--onzichtbare row-->
+                <td class="noLeftBorder noRightBorder" colspan="8"></td>     <!--onzichtbare row-->
             </tr>
+
             
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="noRightBorder noBottomBorder" colspan="1"><b>uitvoeringkraan</b></td>
+                <td class="noBottomBorder" colspan="1"><b>uitvoeringkraan</b></td>
                 <td class=" noTopBorder noBottomBorder" colspan="1">uitvoering onderwagen</td>
                 <td class="noRightBorder noTopBorder noBottomBorder" colspan="1">uitvoering Toren</td>
                 <td class="noTopBorder noBottomBorder" colspan="5"></td>
             </tr>
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="noRightBorder noBottomBorder" colspan="1"></td>
+                <td class="noBottomBorder" colspan="1"></td>
                 <td class=" noBottomBorder" colspan="1"><input type="checkbox">op banden(zelfrijdend</td>
                 <td class="noRightBorder noBottomBorder" colspan="1"><input type="checkbox" name="bHaakHoogte">haakhoogte</td>
                 <td class="noRightBorder noBottomBorder"><input type="text"></td>
@@ -259,23 +271,25 @@ if(!empty($_POST)) {
             </tr>    
 
             <tr>
-                <td class="noTopBorder noBottomBorder" colspan="8"></td>     <!--onzichtbare row-->
+                <td class="noTopBorder noBottomBorder" colspan="1"></td>
+                <td class=" noBottomBorder" colspan="1"><input type="checkbox">op truck</td>
+                <td class="noTopBorder noBottomBorder" colspan="6"></td>     <!--onzichtbare row-->
             </tr>
 
             <tr>    <!--onzichtbare row met tekst-->
-                <td class="noRightBorder noTopBorder noBottomBorder" colspan="1"></td>
-                <td class=" noBottomBorder" colspan="1"><input type="checkbox" name="">op truck</td>
-                <td class="invisablecell" colspan="1"><input type="checkbox" name="bTelescoop">telescoop</td>
+                <td class="noTopBorder noBottomBorder" colspan="1"></td>
+                <td colspan="1"><input type="checkbox">weg-/ruwterein(kenteken)</td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">telescoop</td>
                 <td class="invisablecell"><input type="text"></td>
                 <td class="invisablecell" colspan="1"><input type="checkbox" name="bGiekLengte">gieklengte</td>
                 <td class="invisablecell"><input type="text"></td>
-                <td class="noLeftBorder noBottomBorder noTopBorder" colspan="2"></td>
+                <td class="noTopBorder noBottomBorder noLeftBorder" colspan="2"></td>
             </tr>   
             
             <tr>    <!--onzichtbare row met tekst-->
                 <td class="noRightBorder noTopBorder noBottomBorder" colspan="1"></td>
-                <td class=" noBottomBorder" colspan="1"><input type="checkbox">weg-/ruwterein(kenteken)</td>
-                <td class="invisablecell" colspan="1"><input type="checkbox" name="bOpbouwGiek">opbouw giek</td>
+                <td class="noBottomBorder noRightBorder" colspan="1"></td>
+                <td class="invisablecell" colspan="1"><input type="checkbox">opbouw giek</td>
                 <td class="invisablecell"><input type="text"></td>
                 <td class="invisablecell" colspan="1"><input type="checkbox" name="bTopbaar">topbaar</td>
                 <td class="invisablecell"><input type="text"></td>
@@ -331,42 +345,94 @@ if(!empty($_POST)) {
                 <td class="noRightBorder" colspan="1"><input type="checkbox">dozerblad</td>
                 <td class="noLeftBorder noTopBorder" colspan="3"></td>
             </tr>
-        </Table>
-        <br>
-        <table width="80%" style="margin-left: auto; margin-right: auto;">
 
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="noRightBorder noTopBorder " colspan="1">bevindingen</td>
-                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1"><input type="checkbox">Tekortkoming A of B</td>
-                <td colspan="1"></td>
-                <td colspan="1"><input type="checkbox">ja</td>
-                <td colspan="1"><input type="checkbox">nee</td>
-            </tr>
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="noRightBorder noTopBorder " colspan="1"></td>
-                <td class="noLeftBorder noRightBorder noTopBorder" colspan="1" >Afgemeld door</td>
-                <td class="noRightBorder noTopBorder  noLeftBorder "><input type="text"></td>
-            </tr>
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td class="noRightBorder noTopBorder " colspan="5" >Directe voorzieningen voordat de kraan weer in gebruik gesteld hier bij herkeurung vereist is</td>
-            </tr>
-            <tr>    <!--onzichtbare row met tekst-->
-                <tr>
-                    <td colspan="5"><textarea name="" id="" cols="130" rows="6"></textarea></td>
-    
-                </tr>
-            </tr>
-            <tr>    <!--onzichtbare row met tekst-->
-                <td class="invisablecell" colspan="1"></td>
-                <td class="noLeftBorder noRightBorder no" colspan="5" >toelichting</td>
-            </tr>
+
             <tr>
-                <td colspan="5"><textarea name="" id="" cols="130" rows="8"></textarea></td>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="6"></td>
+            </tr>
 
+
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noBottomBorder" colspan="1"><b>Eigenaar</b></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1">Naam:</td>
+                <td class="noLeftBorder noRightBorder noBottomBorder"></td>
+                <td class="invisablecell" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="3"></td>
+                <td class="noLeftBorder noBottomBorder" colspan="3"></td>
             </tr>
             
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noBottomBorder" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1">Adress:</td>
+                <td class="noLeftBorder noRightBorder noBottomBorder"></td>
+                <td class="invisablecell" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="3"></td>
+                <td class="noLeftBorder noBottomBorder" colspan="3"></td>
+            </tr> 
+
+                        <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noBottomBorder" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="1">Postcode/Plaats:</td>
+                <td class="noLeftBorder noRightBorder noBottomBorder"></td>
+                <td class="invisablecell" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="3"></td>
+                <td class="noLeftBorder noBottomBorder" colspan="3"></td>
+            </tr> 
+
+                        <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder" colspan="1">Telefoonnummer:</td>
+                <td class="noLeftBorder noRightBorder"></td>
+                <td class="invisablecell" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder" colspan="3"></td>
+                <td class="noLeftBorder" colspan="3"></td>
+            </tr>  
+
+
+            <tr>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="6"></td>
+            </tr>
+
+
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noBottomBorder noRightBorder" colspan="1"><b>bevindingen</b></td>
+                <td class="noBottomBorder noLeftBorder noRightBorder" colspan="1"><input type="checkbox">Tekortkoming A of B</td>
+                <td class="noBottomBorder noLeftBorder noRightBorder" colspan="1"></td>
+                <td class="noBottomBorder noLeftBorder noRightBorder" colspan="1"><input type="checkbox" name="bJa">ja</td>
+                <td class="noBottomBorder noLeftBorder noRightBorder" colspan="1"><input type="checkbox" name="bNee">nee</td>
+                <td class="noBottomBorder noLeftBorder" colspan="3"></td>
+                
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noTopborder noBottomBorder noRightBorder" colspan="1"></td>
+                <td class="invisablecell" colspan="1" >Afgemeld door</td>
+                <td class="noTopborder noBottomBorder noLeftBorder" colspan="6"><input type="text"></td>
+            </tr>
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noTopborder noBottomBorder noRightBorder" colspan="1"></td>
+                <td class="noTopborder noBottomBorder noLeftBorder" colspan="7" >Directe voorzieningen voordat de kraan weer in gebruik gesteld hier bij herkeurung vereist is</td>
+            </tr>       
+                <tr>
+                    <td class="noTopborder noBottomBorder noRightBorder"></td>
+                    <td class="noTopborder noBottomBorder noLeftBorder" colspan="7"><textarea name="sDirecteVoorziening" id="" cols="157" rows="3"></textarea></td>
+                </tr>            
+            <tr>    
+                <td class="noTopborder noBottomBorder noRightBorder" colspan="1"></td>
+                <td class="noTopborder noBottomBorder noLeftBorder" colspan="7" ><b>toelichting</b></td>
+            </tr>
+
+            <tr>
+                <td class="noBottomBorder noRightBorder noTopBorder"></td>
+                <td class="noTopborder noBottomBorder noLeftBorder" colspan="7"><textarea name="sToelichting" id="" cols="157" rows="8"></textarea></td>
+            </tr>
+
+            <tr>
+            <td class="noTopBorder" colspan="8" ></td>
+            </tr>
+
         </table>
-        </form>
+        <input type="submit" value="submit">
+        </div>
+    </form>
 </body>
 </html>
