@@ -350,6 +350,7 @@ if(!empty($_POST)) {
                 <td class="noLeftBorder noRightBorder noTopBorder" colspan="6"></td>
             </tr>
 
+            <!--Begin eigenaar kolom-->
 
             <tr>    <!--onzichtbare row met tekst-->
                 <td class="noRightBorder noBottomBorder" colspan="1"><b>Eigenaar</b></td>
@@ -385,8 +386,37 @@ if(!empty($_POST)) {
                 <td class="invisablecell" colspan="1"></td>
                 <td class="noLeftBorder noRightBorder" colspan="3"></td>
                 <td class="noLeftBorder" colspan="3"></td>
-            </tr>  
+            </tr>
 
+            <!--Einde eigenaar kolom-->
+
+            <tr>
+                <td class="noLeftBorder noRightBorder noTopBorder" colspan="6"></td>
+            </tr>
+
+            <!--Begin opdrachtgever kolom-->  
+
+            <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder noBottomBorder" colspan="1"><b>Opdrachtgever</b></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="2">Bedrijf: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder"></td>
+                <td class="invisablecell" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder noBottomBorder" colspan="3"></td>
+                <td class="noLeftBorder noBottomBorder" colspan="3"></td>
+            </tr>
+            
+            </tr> 
+
+                        <tr>    <!--onzichtbare row met tekst-->
+                <td class="noRightBorder" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder" colspan="2">Functionaris: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="text"></td>
+                <td class="noLeftBorder noRightBorder"></td>
+                <td class="invisablecell" colspan="1"></td>
+                <td class="noLeftBorder noRightBorder" colspan="3"></td>
+                <td class="noLeftBorder" colspan="3"></td>
+            </tr>
+
+            <!--Einde opdrachtgever kolom--> 
 
             <tr>
                 <td class="noLeftBorder noRightBorder noTopBorder" colspan="6"></td>
