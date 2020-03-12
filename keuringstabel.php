@@ -80,6 +80,15 @@ if(!empty($_POST)) {
     $sDatum =$_POST['sDatum'];
     $sOparator=$_POST['sOparator'];
     $sDeskundigen=$_POST['sDeskundligen'];
+    $sFabrikant=$_POST('sFabrikant');
+    $sFabrikaat=$_POST('sFabrikaat');
+    $sHijsModelType=$_POST('sHijsModelType');
+    $sOnderModelType=$_POST('sOnderModelType');
+    $iSerieNumber=$_POST('iSerieNumber');
+    $iIndentificationNumber=$_POST('iIndentificationNumber');
+    $iHijsBedrijfsNummer=$_POST('iHijsBedrijfsNummer');
+    $iOnderBedrijfsNummer=$_POST('iOnderBedrijfsNummer');
+    $iBouwJaar=$_POST('iBouwjaar');
     $sUitvoeringDoor = $_POST['sUuitvoeringDoor'];
     $bUitvoeringKraan = $_POST['bUitvoeringKraan'];
     $bUitvoeringOnderwagen = $_POST['uUitvoeringOnderwagen'];
@@ -431,8 +440,9 @@ if(!empty($_POST)) {
             </tr>
 
         </table>
-        <input type="submit" value="submit">
+
         </div>
+        <input type="submit" value="submit">
     </form>
 </body>
 </html>
