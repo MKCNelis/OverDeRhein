@@ -38,39 +38,6 @@ table, th, td {                         /*Defines the thickness and color of the
 
 }
 
-.onlyBottomBorder{                         /*Makes the cell invisable exept for the bottom border*/
-    border-bottom: black;
-    height: 25px;
-
-}
-
-.onlyTopBorder{                         /*Makes the cell invisable exept for the top border*/
-    border-top: black;
-    border-bottom: #00000000;                    
-    border-left-color: #00000000;
-    border-right: #00000000;
-    height: 25px;
-
-}
-
-.onlyLeftBorder{                        /*Makes the cell invisable exept for the left border*/
-    border-bottom: #00000000;                    
-    border-left: black;
-    border-right: #00000000;
-    border-top: #00000000;
-    height: 25px;
-
-}
-
-.onlyRightBorder{                         /*Makes the cell invisable exept for the right border*/
-    border-bottom: #00000000;
-    border-left: #00000000;
-    border-right: black;
-    border-top: #00000000;
-    height: 25px;
-
-}
-
 .noLeftBorder{
     border-left-color: #00000000;
     height: 25px;
@@ -94,7 +61,6 @@ table, th, td {                         /*Defines the thickness and color of the
     height: 25px;
 
 }
-
 
 
 .graysquare{                            /*Gives a gray background and gives a black border*/

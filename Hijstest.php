@@ -36,41 +36,43 @@ function LoadArray(){
 //send the loaded data to main
     return($aReadArray);
 }
-// Declare the Variabls
+// Declare the Variables
     $sOpdrachtnummer = "";
-    $sTVCTNummer="";
-    $sDatum="";
-    $sOparator"";
-    $sDeskundigen"";
-    $sUitvoeringDoor"";
-    $bUitvoeringkraan"";
-    $bUitvoeringOnderwagen"";
-    $bUitvoeringToren"";
-    $bHaakhoogte"";
-    $bTelescoop"";
-    $bHaakhoogte"";
-    $bOpbouwGiek"";
-    $bTopbaar"";
-    $bHulpgiek"";
-    $bMetloopkat"";
-    $bRailstellenspoorbreetewielbalast"";
-    $bVerstelbareGiek"";
-    $bRijdend"";
-    $bMonogiek"";
-    $bHaakhoogte"";
-    $bStationare"";
-    $bFly-jib"";
-    $bBingietframe"";
-    $bStempel"";
-    $bVrijstaand"";
-    $bStempel"";
-    $bBevindingen"";
-    $bTekortkomingAofB"";
-    bJa"";
-    bNee"";
-    $sAfgemeld door"";
-    $sDirecteVoorzieningenVoordatDeKraanWeerInGebruik"";
-    $sToelichting"";
+    $sTVCTNummer = "";
+    $sDatum = "";
+$sDeKlijn = "";
+
+    $sOparator = "";
+    $sDeskundigen = "";
+    $sUitvoeringDoor="";
+    $bUitvoeringkraan="";
+    $bUitvoeringOnderwagen="";
+    $bUitvoeringToren="";
+    $bHaakhoogte="";
+    $bTelescoop="";
+    $bHaakhoogte="";
+    $bOpbouwGiek="";
+    $bTopbaar="";
+    $bHulpgiek="";
+    $bMetloopkat="";
+    $bRailstellenspoorbreetewielbalast="";
+    $bVerstelbareGiek="";
+    $bRijdend="";
+    $bMonogiek="";
+    $bHaakhoogte="";
+    $bStationare="";
+    $bFly_jib="";
+    $bBingietframe="";
+    $bStempel="";
+    $bVrijstaand="";
+    $bStempel="";
+    $bBevindingen="";
+    $bTekortkomingAofB="";
+    $bJa="";
+    $bNee="";
+    $sAfgemeldDoor"";
+    $sDirecteVoorzieningen="";
+    $sToelichting="";
 //Fill a variable with the posted Note
 if(!empty($_POST)) {
     var_dump($_POST);
@@ -106,7 +108,7 @@ if(!empty($_POST)) {
     $bTekortkomingAofB =$_POST ['Btekortkoming'];
     $bJa =$_POST ['bJa'];
     $bNee =$_POST ['bNee'];
-    $sAfgemeld door =$_POST ['aAfmelding'];
+    $sAfgemeldDoor =$_POST ['aAfmelding'];
     $sDirecteVoorzieningen =$_POST ['sDirecteVoorzieningen'];
     $sToelichting =$_POST ['sToelichting'];
 //     load the database

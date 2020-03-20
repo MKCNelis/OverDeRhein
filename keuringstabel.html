@@ -1,3 +1,126 @@
+<?php
+//PHP always on top of the file
+
+//    a funtion to save an array to a file
+//@ parameter: $_a SavedArray
+// Type array
+// Description: to save an array
+function SaveArray($p_SavedArray){
+// Use JSON to encode the array into a storeable string
+    $aJSONArray = json_encode($p_SavedArray);
+
+    // Open the file in 'write' modus
+    $file = fopen('database.json','w');
+
+    // Save the content of the JSON array into the file
+    file_put_contents('database.json', $aJSONArray);
+
+// Close the file
+    fclose($file);
+
+}
+// A funtion to load an array
+//
+function LoadArray(){
+// Open the file in 'read' modus
+    $file = fopen('database.json','r');
+
+// Read the JSON array from the file
+    $aJSONArray = file_get_contents('database.json');
+
+// Convert to JSON array back to a PHP array
+    $aReadArray = json_decode($aJSONArray,TRUE);
+
+    // Close the file again
+    fclose($file);
+//send the loaded data to main
+    return($aReadArray);
+}
+// Declare the Variables
+    $sOpdrachtnummer = "";
+    $sTVCTNummer = "";
+    $sDatum = "";
+    $sOparator = "";
+    $sDeskundigen = "";
+    $sUitvoeringDoor="";
+    $bUitvoeringkraan="";
+    $bUitvoeringOnderwagen="";
+    $bUitvoeringToren="";
+    $bHaakhoogte="";
+    $bTelescoop="";
+    $bHaakhoogte="";
+    $bOpbouwGiek="";
+    $bTopbaar="";
+    $bHulpgiek="";
+    $bMetloopkat="";
+    $bRailstellenspoorbreetewielbalast="";
+    $bVerstelbareGiek="";
+    $bRijdend="";
+    $bMonogiek="";
+    $bHaakhoogte="";
+    $bStationare="";
+    $bFly_jib="";
+    $bBingietframe="";
+    $bStempel="";
+    $bVrijstaand="";
+    $bStempel="";
+    $bBevindingen="";
+    $bTekortkomingAofB="";
+    $bJa="";
+    $bNee="";
+    $sAfgemeldDoor = "";
+    $sDirecteVoorzieningen = "";
+    $sToelichting = "";
+//Fill a variable with the posted Note
+if(!empty($_POST)) {
+    var_dump($_POST);
+
+    $sOpdrachtnummer = $_POST ['sOPdrachtnummer'];
+    $sTVCTNummer= $_POST ['sTVCTNummer'];
+    $sDatum =$_POST ['sDatum'];
+    $sOparator=$_POST ['sOparator'];
+    $sDeskundigen=$_POST ['sDeskundligen'];
+    $sUitvoeringDoor = $_POST ['sUuitvoeringDoor'];
+    $bUitvoeringKraan = $_POST ['bUitvoeringKraan'];
+    $bUitvoeringOnderwagen = $_POST ['uUitvoeringOnderwagen'];
+    $bUitvoeringToren = $_POST ['bUitvoeringtoren'];
+    $bHaakHoogte = $_POST ['bHaakHoogte'];
+    $bTelescoop = $_POST ['bTelescoop'];
+    $bHaakhoogte = $_POST ['bHaakHoogte'];
+    $bOpbouwGiek = $_POST ['bOpbouGiek'];
+    $bTopbaar = $_POST ['bTopbaar'];
+    $bHulpgiek = $_POST ['bHulphiek'];
+    $bMetloopkat = $_POST [''];
+    $bRailstellenspoorbreetewielbalast = $_POST [''];
+    $bVerstelbareGiek =$_POST ['bVerstelbareGiek'];
+    $bRijdend =$_POST ['bRijdend'];
+    $bMonogiek =$_POST ['bMonoGiek'];
+    $bHaakhoogte =$_POST ['bHaakHoogte'];
+    $bStationare =$_POST ['bStationare'];
+    $bFlyJib =$_POST ['bFlyJib'];
+    $bBingietframe =$_POST ['bBinggietFrame'];
+    $bStempel =$_POST ['bStempel'];
+    $bVrijstaand =$_POST ['bVrijStaand'];
+    $bStempel =$_POST ['bStempel'];
+    $bBevindingen =$_POST ['bBevindingen'];
+    $bTekortkomingAofB =$_POST ['Btekortkoming'];
+    $bJa =$_POST ['bJa'];
+    $bNee =$_POST ['bNee'];
+    $sAfgemeldDoor =$_POST ['aAfmelding'];
+    $sDirecteVoorzieningen =$_POST ['sDirecteVoorzieningen'];
+    $sToelichting =$_POST ['sToelichting'];
+//     load the database
+    $aDatabase = LoadArray();
+    // Count the number of records in the database
+    $iRecordCounter = count($aDatabase);
+    // Add a new record to the database
+    $aDatabase[$iRecordCounter] = array($sFirstName, $sPostalCode, $sCity);
+//   save the databaseeeq to file
+    SaveArray($aDatabase);
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
