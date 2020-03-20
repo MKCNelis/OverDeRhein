@@ -15,9 +15,24 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1Xn6t00itzYXycaEsptcOJKWL3U" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -60,6 +75,10 @@
       <workItem from="1583826607830" duration="5491000" />
       <workItem from="1583915882694" duration="2265000" />
       <workItem from="1584001033899" duration="4424000" />
+      <workItem from="1584030951698" duration="759000" />
+      <workItem from="1584036596522" duration="5874000" />
+      <workItem from="1584090729442" duration="102000" />
+      <workItem from="1584432860110" duration="14000" />
     </task>
     <servers />
   </component>
@@ -71,14 +90,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="83" key="FileChooserDialogImpl/0.0.1280.680/460.1080.1000.504@0.0.1280.680" timestamp="1581669980920" />
+    <state x="479" y="52" key="RollbackChangesDialog" timestamp="1584086752711">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="479" y="52" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1584086752711" />
     <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1584001208387">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680/460.1080.1000.504@0.0.1280.680" timestamp="1584001208387" />
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1584001188739">
+    <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1584432861791">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680/460.1080.1000.504@0.0.1280.680" timestamp="1584001188739" />
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1583485086196" />
+    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680/460.1080.1000.504@0.0.1280.680" timestamp="1584030983576" />
+    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584432861791" />
   </component>
 </project>
